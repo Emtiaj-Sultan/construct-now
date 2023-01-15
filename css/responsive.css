@@ -1,0 +1,150 @@
+@media only screen and (max-width:920px) {
+    nav {
+        flex-direction: column;
+        padding: auto 10px;
+    }
+
+    .nav-link ul li {
+        padding: 10px;
+    }
+
+    .banner-info {
+        padding-top: 40px;
+    }
+
+    .banner-title,
+    .details {
+        padding: auto 10px;
+    }
+
+    .feature-top {
+        flex-direction: column;
+    }
+
+    .feature-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-bottom-img {
+        height: 1100px;
+        width: 100vw;
+    }
+
+    .feature-bottom-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .achievement {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .fact-title {
+        margin-left: 20px;
+    }
+
+    .company-logo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .members-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+        padding-left: 35px;
+    }
+
+    .social-link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:705px) {
+    .nav-link ul {
+        margin-left: -97px;
+        flex-direction: column;
+    }
+
+
+    .nav-link ul li {
+        padding: 10px;
+    }
+
+    .nav-link ul li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .banner-info {
+        padding-top: 40px;
+    }
+
+    .banner-title,
+    .details {
+        padding: auto 10px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .feature-top {
+        flex-direction: column;
+    }
+
+    .feature-top-images {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .feature-bottom-img .btn-primary {
+        height: 160px;
+        width: 300px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .feature-bottom-img .btn-primary span {
+
+        font-size: 50px;
+
+    }
+
+    .feature-top-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .feature-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .achievement {
+        grid-template-columns: repeat(1, .5fr);
+        grid-row-gap: 130px;
+        grid-column-gap: 0;
+        justify-content: center;
+    }
+
+    .fact-title {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .company-logo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .members-details {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        padding-left: 35px;
+    }
+
+    .social-link {
+        display: none;
+    }
+
+}

@@ -1,0 +1,419 @@
+/* ////////////////////////////////////////////
+------------------ Google Font ---------------  
+//////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* ////////////////////////////////////////////
+------------------ Common styles ---------------  
+//////////////////////////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --lightblue: #019fb6;
+    --orange: #FF900E;
+    --lightblack: #727272;
+    --black: #131313;
+    --yellow: #FAA515;
+    --blue: #2980BA;
+    --black-light: #424242;
+
+
+}
+
+span {
+    color: var(--lightblue);
+}
+
+/* strong {
+    color: var(--orange);
+} */
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.title-primary {
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.btn-primary {
+    height: 65px;
+    width: 180px;
+    background: linear-gradient(90deg, rgb(205, 3, 255), rgb(62, 2, 228));
+    color: #FFF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.details {
+    padding: 30px 10px;
+    font-weight: 400;
+    color: var(--lightblack);
+    line-height: 20px;
+}
+
+/* ////////////////////////////////////////////
+------------------ Header styles ---------------  
+//////////////////////////////////////////////*/
+
+
+header,
+.banner {
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link ul li:not(:last-child) {
+    margin-right: 49px;
+}
+
+.nav-link ul li::after {
+    content: '';
+    display: flex;
+    margin-top: 5px;
+    width: 0;
+    height: 4px;
+    background: var(--lightblue);
+    transition: width .5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-link ul li a:hover {
+    transition: 0.5s ease-in;
+    color: var(--lightblue);
+}
+
+/* ////////////////////////////////////////////
+------------------ Banner styles ---------------  
+//////////////////////////////////////////////*/
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 60px;
+    color: var(--black);
+}
+
+
+
+.banner-img img {
+    margin: 50px 0 45px;
+    width: 100%;
+}
+
+
+/* ////////////////////////////////////////////
+------------------ Feature Top styles ---------------  
+//////////////////////////////////////////////*/
+.feature-top {
+    padding: 0 50px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.feature-top-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.feature-top-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px #13131347;
+    transition: transform 2s linear;
+}
+
+.feature-top-img:hover img {
+    transform: translateY(-16px);
+    box-shadow: 0px 0px 2px 0px #1313132a;
+}
+
+.feature-top-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.feature-top-title span:first-child {
+    color: var(--lightblack);
+}
+
+.feature-top-title span:last-child {
+    color: var(--orange);
+}
+
+.feature-top-info .details {
+    text-align: left;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Feature bottom  */
+
+.feature-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    margin-top: 130px;
+}
+
+.feature-bottom-title {
+    margin-top: 30px;
+}
+
+.feature-bottom-title .title {
+    padding-left: 20px;
+    border-left: 5px solid var(--orange);
+}
+
+.feature-bottom-services {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.feature-bottom-services-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+
+}
+
+.feature-bottom-services .details {
+    padding: 10px 0 0;
+}
+
+.feature-bottom-img {
+    position: relative;
+    height: 1150px;
+    width: 700px;
+}
+
+.feature-bottom-img img {
+    position: absolute;
+    height: 1100px;
+    width: 700px;
+}
+
+.feature-bottom-img .btn-primary {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 340px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 40px;
+}
+
+.feature-bottom-img .btn-primary span {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+/* ////////////////////////////////////////////
+------------------ Facts Top styles ------------ 
+//////////////////////////////////////////////*/
+
+.facts {
+    padding: 0 20px;
+    padding-top: 130px;
+}
+
+.fact-title {
+    width: 550px;
+}
+
+.facts .details {
+    padding-left: 0;
+}
+
+.achievement {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 120px;
+    padding: 35px 0;
+}
+
+.achievement-info {
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.achievement-info .title {
+    color: var(--black-light);
+    margin: 5px;
+}
+
+.achievement-info .details {
+    padding: 10px;
+}
+
+.achievement-info .our-motto {
+    padding-top: 85px;
+}
+
+.achievement-info:hover .our-motto {
+    display: none;
+}
+
+.achievement-info i {
+    font-size: 45px;
+    color: var(--yellow);
+    margin: 8px;
+}
+
+.achievement-info:nth-child(2) i {
+    color: var(--blue);
+}
+
+/* ////////////////////////////////////////////
+------------------ Our Sponsor styles ------------ 
+//////////////////////////////////////////////*/
+
+.company-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.company-logo img {
+    filter: grayscale(100%);
+}
+
+/* ////////////////////////////////////////////
+------------------ My Team Members styles ------------ 
+//////////////////////////////////////////////*/
+
+.members-details {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ////////////////////////////////////////////
+------------------ Social link styles ------------ 
+//////////////////////////////////////////////*/
+
+.social-link {
+    position: absolute;
+}
+
+.social-link ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 250px;
+}
+
+.social-link .f-icon {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+
+.social-link .f-icon:nth-child(1) {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    color: #fff;
+}
+
+.social-link .f-icon:nth-child(2) {
+    background: rgb(245, 19, 151);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    color: rgb(255, 252, 255);
+}
+
+.social-link .f-icon:nth-child(3) {
+    background: #3B5999;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    color: #fff;
+}
+
+.social-link .f-icon:nth-child(4) {
+    background: #a3a2a29f;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    color: rgb(238, 18, 18);
+}
+
+/* ////////////////////////////////////////////
+------------------ Footer styles ------------ 
+//////////////////////////////////////////////*/
+
+.footer-info {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
